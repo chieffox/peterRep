@@ -1,66 +1,41 @@
-<?php
-
-/**
- * 微商城模块定义
- *
- * @author WeEngine Team
- * @url
- */
-defined('IN_IA') or exit('Access Denied');
-
-class Ewei_shoppingModule extends WeModule {
-
-    public function fieldsFormDisplay($rid = 0) {
-        global $_W;
-        $setting = $_W['account']['modules'][$this->_saveing_params['mid']]['config'];
-        include $this->template('rule');
-    }
-
-    public function fieldsFormSubmit($rid = 0) {
-        global $_GPC, $_W;
-        if (!empty($_GPC['title'])) {
-            $data = array(
-                'title' => $_GPC['title'],
-                'description' => $_GPC['description'],
-                'picurl' => $_GPC['thumb-old'],
-                'url' => create_url('mobile/module/list', array('name' => 'shopping', 'weid' => $_W['weid'])),
-            );
-            if (!empty($_GPC['thumb'])) {
-                $data['picurl'] = $_GPC['thumb'];
-                file_delete($_GPC['thumb-old']);
-            }
-            $this->saveSettings($data);
-        }
-        return true;
-    }
-
-    public function settingsDisplay($settings) {
-        global $_GPC, $_W;
-
-        if (checksubmit()) {
-            $cfg = array(
-                'noticeemail' => $_GPC['noticeemail'],
-                'mobile' => $_GPC['mobile'],
-                'shopname' => $_GPC['shopname'],
-	            'template' => $_GPC['template'],
-	            'templateid' => $_GPC['templateid'],
-                'address' => $_GPC['address'],
-                'phone' => $_GPC['phone'],
-                'officialweb' => $_GPC['officialweb'],
-                'status' => intval($_GPC['status']),
-                'description'=>  $_GPC['description']
-            );
-	        $cfg['description'] = preg_replace('/&lt;img\s.*?style=&quot;.*?&quot;.*?/', '<img style="width: 100%"', $cfg['description']);
-	        $cfg['description'] = htmlspecialchars_decode($cfg['description']);
-            if (!empty($_GPC['logo'])) {
-                $cfg['logo'] = $_GPC['logo'];
-            }
-            if ($this->saveSettings($cfg)) {
-                message('保存成功', 'refresh');
-            }
-        }
-        load()->func('tpl');
-		include $this->template('setting');
-    }
-
+<?php
+/**
+ * gtf_cyb模块定义
+ *
+ * @author GTF团队
+ * @url 
+ */
+defined('IN_IA') or exit('Access Denied');
+
+class Gtf_cybModule extends WeModule {
+ public $tablename = 'gtf_chouqian_reply';
+	
+	/*设置活动默认数据*/
+    public function fieldsFormDisplay($rid = 0) {
+        global $_W;
+    }
+
+    public function fieldsFormValidate($rid = 0) {
+        return '';
+    }
+	
+	/*保存活动入库*/
+    public function fieldsFormSubmit($rid) {
+
+        global $_W, $_GPC;
+
+    }
+	
+	/*删除活动*/
+    public function ruleDeleted($rid) {
+       
+    }
+
+	/*系统设置用不到*/
+    public function settingsDisplay($settings) {
+
+        global $_GPC, $_W;
+
+    }
+
 }

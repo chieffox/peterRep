@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no"/>
+    <title>排行榜</title>
+    <style>
+    </style>
+	
+	
+</head>
+<body style="background-image:url(../addons/gtf_cyb/template/mobile/images/paihang.jpg); background-size:100%;">
+	<style>
+		
+		ul li {list-style-type:none;}
+		
+	</style>
+
+    <div class="div-loading" style="color:#fff; font-size:30px; text-align:center;">
+		<ul style="width:80%; margin-top:30%;">
+			{loop $paihang $r}
+			<li style="margin-top:10px; height:30px; width:100%;"><span style="float:left;">{$r['realname']}</span> <span style="float:right;">{$r['num']}个</span></li>
+			{/loop}
+		</ul>
+    </div>
+</body>
+
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+{php $signPackage=$_W['account']['jssdkconfig'];}	
+<script>
+wx.config({
+	debug: false,   
+	appId: '<?php echo $signPackage["appId"];?>',
+	timestamp: '<?php echo $signPackage["timestamp"];?>',
+	nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+	signature: '<?php echo $signPackage["signature"];?>',
+	jsApiList: ['checkJsApi','onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo',]
+});
+
+wx.ready(function () {
+	var weid = "{$weid}";
+	var url = "{php echo $_W['siteroot']}app/index.php?i="+weid+"&c=entry&do=index&m=gtf_cyb";
+	var shareData = {
+		title: "{$item['fxtitle']}",
+		desc: "{$item['fxneirong']}",
+		link: url,
+		imgUrl: "{$_W['siteroot']}/attachment/{$item['fxtupian']}",
+		trigger: function (res) {},
+		complete: function (res) {},
+		success: function (res) {
+             alert("分享成功");
+			},
+		cancel: function (res) {
+             alert("分享失败");
+		},
+		fail: function (res) {}
+	};
+	wx.onMenuShareAppMessage(shareData);
+	wx.onMenuShareQQ(shareData);
+	wx.onMenuShareWeibo(shareData);
+	wx.onMenuShareTimeline(shareData);
+});
+</script>
+
+
+</html>
+<!--[if !IE]>|xGv00|a6d03ba51a4aabe3b4e4bbfbc2d8709c<![endif]-->
