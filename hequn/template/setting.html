@@ -28,6 +28,13 @@
 					</div>
 				</div>
 				<div class="form-group">
+					<label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">公众号头像</label>
+					<div class="col-sm-5">
+						{php echo tpl_form_field_image('uniacavatar', $item['uniacavatar']);}
+						<span class="help-block">公众号头像</span>
+					</div>
+				</div>
+				<div class="form-group">
 					<label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">公众号二维码</label>
 					<div class="col-sm-5">
 						{php echo tpl_form_field_image('uniacqrcode', $item['uniacqrcode']);}
