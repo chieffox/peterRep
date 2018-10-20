@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>青岛共享智能制造</title>
+  <meta name="keywords" content="青岛共享智能制造" />
+  <meta name="description" content="青岛共享智能制造" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+
+  <style>
+  	html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      display: -webkit-flex; /* Safari */
+  		display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slideImg {
+    	width: 120%;
+
+    }
+    .ani-rotate {
+    	animation: myrotate 20s 1s ease-in-out infinite;
+    	-webkit-animation: myrotate 20s 1s ease-in-out infinite;
+    }
+    .ani-move {
+    	animation: mymove 20s 1s ease-in-out infinite;
+    	-webkit-animation: mymove 20s 1s ease-in-out infinite;
+    }
+    @keyframes myrotate {
+    	0% {transform:rotate(0deg) scale(1,1);}
+    	30% {transform:rotate(2deg) scale(1.1,1.1);}
+    	60% {transform:rotate(2deg) scale(1.1,1.1);}
+    	100% {transform:rotate(0deg) scale(1,1);}
+    }
+    @-webkit-keyframes myrotate {
+    	0% {transform:rotate(0deg) scale(1,1);}
+    	30% {transform:rotate(2deg) scale(1.1,1.1);}
+    	60% {transform:rotate(2deg) scale(1.1,1.1);}
+    	100% {transform:rotate(0deg) scale(1,1);}
+    }
+    @keyframes mymove {
+    	0% {transform:translate(0%);}
+    	30% {transform:translate(-5%);}
+    	60% {transform:translate(-5%);}
+    	100% {transform:translate(0%);}
+    }
+    @-webkit-keyframes mymove {
+    	0% {transform:translate(0%);}
+    	30% {transform:translate(-5%);}
+    	60% {transform:translate(-5%);}
+    	100% {transform:translate(0%);}
+    }
+    .bannerTextBox {
+    	position: absolute;
+    	z-index: 100;
+    }
+    .bannerText {
+    	font-size: 50px;
+    	color: #fff;
+    	font-weight: 600;
+    	text-align: center;
+    }
+    .bannerSubText {
+    	font-size: 24px;
+    	color: #fff;
+    	text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<img src="assets/images/banner01.jpg" class="slideImg ani-rotate" />
+      	<div class="bannerTextBox">
+	      	<div class="bannerText">Slide 1</div>
+	      	<div class="bannerSubText">subTitle slide 1</div>
+	      </div>
+      </div>
+      <div class="swiper-slide">
+      	<img src="assets/images/banner02.jpg" class="slideImg ani-move" />
+      	<div class="bannerTextBox">
+	      	<div class="bannerText">Slide 2</div>
+	      	<div class="bannerSubText">subTitle slide 2</div>
+	      </div>
+      </div>
+      <div class="swiper-slide">
+      	<img src="assets/images/banner03.jpg" class="slideImg ani-rotate" />
+      	<div class="bannerTextBox">
+	      	<div class="bannerText">Slide 3</div>
+	      	<div class="bannerSubText">subTitle slide 3</div>
+	      </div>
+      </div>
+      <div class="swiper-slide">
+      	<img src="assets/images/banner04.jpg" class="slideImg ani-rotate" />
+      	<div class="bannerTextBox">
+	      	<div class="bannerText">Slide 4</div>
+	      	<div class="bannerSubText">subTitle slide 4</div>
+	      </div>
+      </div>
+      <div class="swiper-slide">
+      	<img src="assets/images/banner05.jpg" class="slideImg ani-rotate" />
+      	<div class="bannerTextBox">
+	      	<div class="bannerText">Slide 5</div>
+	      	<div class="bannerSubText">subTitle slide 5</div>
+	      </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  
+  <div style="background:red; height: 500px; width: 100%;"></div>
+  <div style="background:yellow; height: 500px; width: 100%;"></div>
+  <div style="background:green; height: 500px; width: 100%;"></div>
+  <div style="background:blue; height: 500px; width: 100%;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  var windowHeight = $('.swiper-slide').height();
+  console.log(windowHeight);
+  $(window).scroll(function(event){
+    if(scrollLock){
+      $(window).scrollTop(windowHeight);
+      scrollLock = false;
+    }
+  });
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 0,
+    effect: 'fade',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+</body>
+</html>

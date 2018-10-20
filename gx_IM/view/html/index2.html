@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>青岛共享智能制造</title> 
+  <meta name="keywords" content="青岛共享智能制造" /> 
+  <meta name="description" content="青岛共享智能制造" /> 
+  <script src="/assets/js/jquery-1.11.3.min.js"></script> 
+  <script src="/assets/js/jquery.easing.min.js"></script> 
+  <script src="/assets/js/wow.min.js"></script> 
+  <script src="/assets/js/XQ-1.0.3-bate.js"></script> 
+  <script src="/assets/js/l_js.js"></script>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/main.css" /> 
+  <link rel="stylesheet" href="/assets/css/public.css" /> 
+  <link rel="stylesheet" href="/assets/css/animate.min.css" />
+  <link rel="stylesheet" href="/assets/css/l_style.css" /> 
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <script src="/assets/js/jquery.mousewheel.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+</head> 
+<body>
+  <!-- index -->
+  <div class="bankScroll" id="index">
+    <!-- header -->
+    <header class="po-f clearfix">
+	<div class="contain">
+		<div class="logo left">
+			<a href="/">
+				<img src="/assets/images/logo.png" alt="青岛共享智能制造" />
+			</a>
+		</div>
+		<div class="right">
+			<div class="hotline right">
+				<a href="/" title="公司400客户服务热线">
+					<i class="icons icon-tel"></i>
+					<span>13475837382</span>
+				</a>
+			</div>
+			<nav class="menu over right">
+				<ul class="clearfix right">
+					<li class="cur">
+						<a href="/">
+							<i class="line"></i>首页
+						</a>
+					</li>
+					
+					<li>
+						<a href="/service/"><i class="line"></i>业务</a>
+					</li>
+					
+					<li>
+						<a href="/case/APP/"><i class="line"></i>案例</a>
+					</li>
+					
+					<li>
+						<a href="/customer/"><i class="line"></i>客户</a>
+					</li>
+					
+					<li>
+						<a href="/about/"><i class="line"></i>关于</a>
+					</li>
+					
+					<li>
+						<a href="/contact/"><i class="line"></i>联系</a>
+					</li>
+					
+				</ul>
+				<div class="close-wrap"><a href="javascript:;" class="close-btn">X</a></div>
+			</nav>
+			<i class="icons icon-menu"></i>
+		</div>
+	</div>
+</header>
+<nav class="menu over" id="mobile-nav">
+	<ul class="clearfix right">
+		<li class="cur">
+			<a href="/">
+				<i class="line"></i>首页
+			</a>
+		</li>
+		
+		<li>
+			<a href="/service/"><i class="line"></i>业务</a>
+		</li>
+		
+		<li>
+			<a href="/case/APP/"><i class="line"></i>案例</a>
+		</li>
+		
+		<li>
+			<a href="/customer/"><i class="line"></i>客户</a>
+		</li>
+		
+		<li>
+			<a href="/about/"><i class="line"></i>关于</a>
+		</li>
+		
+		<li>
+			<a href="/contact/"><i class="line"></i>联系</a>
+		</li>
+		
+	</ul>
+	<div class="close-wrap"><a href="javascript:;" class="close-btn">X</a></div>
+</nav>
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if ( $(window).scrollTop() > '100') {
+				$('header').addClass('open');
+			}else{
+				$('header').removeClass('open');
+			}
+		})
+		var menu = $('nav.menu');
+		var menu_btn = $('header .icon-menu');
+		var close = menu.find('.close-btn');
+		menu_btn.click(function(){
+			menu.addClass('cur');
+		});
+		close.click(function(){
+			menu.removeClass('cur');
+		})
+	})
+</script>
+    <!-- header -->
+    <!-- banner --> 
+    <div class="head head_index" style="background:#666 no-repeat center center;">
+
+	<!-- banner-bg -->
+	<div class="sync_div d1">
+		<ul class="sync v">
+			<li class="one" style="background:#021322 no-repeat scroll 0% 0% / 100% 100%; ">
+				<div class="div-img">
+					<img class="pos fang" style="transform: rotateX(180deg);" src="/assets/images/bg01.jpg" alt="banner_010"/>
+
+					<img class="dou" style="min-height: 0; min-width: 0;width: 200px; height: auto; left: 67vw; z-index: 100;" src="/assets/images/planet.png" alt="banner_012"/>
+
+					<img class="doufan" style="bottom: -30%; z-index: 101;" src="/assets/images/earth.png" alt="banner_011"/>
+
+				</div>
+			</li>
+			<li class="one" style="background:#171B24 none repeat scroll 0% 0%; ">
+				<div class="div-img">
+					<img class="pos dou" src="/assets/images/bg02.jpg" alt="banner_050"/>
+
+				</div>
+			</li>
+			<li class="three one" style="background:#2B2B2B none repeat scroll 0% 0%; ">
+				<div class="div-img">
+					<img class="pos fang" src="/assets/images/bg03.jpg" alt="banner_040"/>
+
+					<!-- 
+					<img class="pos dou" src="/assets/images/etc/1-1609121121000-L.png" alt="banner_041"/>
+
+					-->
+				</div>
+			</li>
+			<li class="two" style="background:#242426 none repeat scroll 0% 0%; ">
+				<div class="div-img">
+					<img class="pos fangda" src="/assets/images/bg04.jpg" alt="banner_030"/>
+
+				</div>
+			</li>
+			<li class="two" style="background:#3D549B none repeat scroll 0% 0%; ">
+				<div class="div-img">
+					<img class="pos fangda" src="/assets/images/bg05.jpg" alt="banner_020"/>
+
+				</div>
+			</li>
+			<li style="background: #dddddd none repeat scroll 0% 0%; "></li>
+			<li style="background: #49669D none repeat scroll 0% 0%; "></li>
+			<li style="background: #E59E15 none repeat scroll 0% 0%; "></li>
+			<li style="background: #eeeeee none repeat scroll 0% 0%; "></li>
+			<li style="background: #dddddd none repeat scroll 0% 0%; "></li>
+		</ul>
+	</div>
+	<!-- banner-bg -->
+
+	<!-- banner-con -->
+	<div class="l_ban w100 clearfix overflow  animated wow fadeIn">
+		<div class="l_ban_index_img clearfix w100 pos_r overflow">
+
+			<!-- 轮播文字 -->
+			<div class="l_ban_index_img_div clearfix left">
+				<div class="contain-img clearfix left banner-1">
+					<div class="l_div clearfix margin text-center xcfff" style="height:400px;">
+						<p data-delay="0.1s" data-opacity="0" data-y="-0.2" class="xf-72 xf-bold "> <em id="dayin">我们用心做好您的互联网产品</em> <em class="gaungbiao"></em>
+						</p>
+						<img data-delay="0s" data-opacity="0" data-y="-0.2" src="/assets/images/etc/1-160912113R70-L.png" alt="我们用心做好您的互联网产品"/>
+						
+					</div>
+				</div>
+
+				<div class="contain-img clearfix left banner-1">
+					<div class="l_div clearfix margin text-center xcfff" style="height:400px;">
+						<p data-delay="0.1s" data-opacity="0" data-y="-0.2" class="xf-72 xf-bold "> <em id="dayin">APP定制开发提供商</em> <em class="gaungbiao"></em>
+						</p>
+						<img data-delay="0s" data-opacity="0" data-y="-0.2" src="/assets/images/etc/1-1609121140180-L.png" alt="APP定制开发提供商"/>
+						
+					</div>
+				</div>
+
+				<div class="contain-img clearfix left banner-1">
+					<div class="l_div clearfix margin text-center xcfff" style="height:400px;">
+						<p data-delay="0.1s" data-opacity="0" data-y="-0.2" class="xf-72 xf-bold "> <em id="dayin">网站定制服务提供商</em> <em class="gaungbiao"></em>
+						</p>
+						<img data-delay="0s" data-opacity="0" data-y="-0.2" src="/assets/images/etc/1-160912113Z90-L.png" alt="网站定制服务提供商"/>
+						
+					</div>
+				</div>
+<div class="contain-img clearfix left banner-1">
+					<div class="l_div clearfix margin text-center xcfff" style="height:400px;">
+						<p data-delay="0.1s" data-opacity="0" data-y="-0.2" class="xf-72 xf-bold "> <em id="dayin">移动微网站开发服务提供商</em> <em class="gaungbiao"></em>
+						</p>
+						<img data-delay="0s" data-opacity="0" data-y="-0.2" src="/assets/images/etc/1-1609121139260-L.png" alt="移动微网站开发服务提供商"/>
+						
+					</div>
+				</div>
+<div class="contain-img clearfix left banner-1">
+					<div class="l_div clearfix margin text-center xcfff" style="height:400px;">
+						<p data-delay="0.1s" data-opacity="0" data-y="-0.2" class="xf-72 xf-bold "> <em id="dayin">软件系统开发服务提供商</em> <em class="gaungbiao"></em>
+						</p>
+						<img data-delay="0s" data-opacity="0" data-y="-0.2" src="/assets/images/etc/1-160912113U40-L.png" alt="软件系统开发服务提供商"/>
+						
+					</div>
+				</div>
+
+			</div>
+			<!-- 轮播文字 -->
+			<!-- 左右控制按钮 -->
+			<a href="javascript:void(0);" class="l_ban_an_l pos_a"></a>
+			<a href="javascript:void(0);" class="l_ban_an_r pos_a"></a>
+			<!-- 左右控制按钮 -->
+			<div class="l_ban_list clearfix pos_a"></div>
+		</div>
+	</div>
+	<!-- banner-con -->
+
+</div>
+    <!-- banner -->
+  </div>
+  <!-- index -->
+  <!-- content -->
+  <!-- 我们的优势 -->
+  <div class="bankScroll" id="advantages">
+    <div class="img-bg">
+<img src="/assets/images/bg11.jpg" alt="我们的优势" />
+
+</div>
+<div class="bg"></div>
+<div class="con" style="background: rgb(0,0,0,0.7);">
+  <!-- <div style="background: rgb(0,0,0,0.7); width: 140%; height: 100%; position: absolute; margin-left: -20%;" ></div> -->
+  <p class="f_72 wow slideInUp">我们的优势</p>
+  <p class="wow slideInUp">同样的产品比质量，同样的质量比技术，同样的技术比效率，同样的效率比服务。</p>
+  <div class="clearfix advantages">
+  <div class="advan advan1 col-md-3 wow slideInUp" data-wow-delay="0.5s">
+      <div class="title">
+        <span>创新</span>
+        <i class="ad-bg bg1"></i>
+      </div>
+      <div class="profile">产品设计的创新化<br />
+产品研发的一体化<br />
+产品源码的规范化</div>
+    </div>
+<div class="advan advan2 col-md-3 wow slideInUp" data-wow-delay="0.5s">
+      <div class="title">
+        <span>职业</span>
+        <i class="ad-bg bg2"></i>
+      </div>
+      <div class="profile"><p>
+	产品规划的职业化<br />
+	运营维护的职业化<br />
+	人工/云测试职业化</p>
+</div>
+    </div>
+<div class="advan advan3 col-md-3 wow slideInUp" data-wow-delay="0.5s">
+      <div class="title">
+        <span>严谨</span>
+        <i class="ad-bg bg3"></i>
+      </div>
+      <div class="profile">核实需求的严谨性<br />
+产品设计的严谨性<br />
+后期交付的严谨性</div>
+    </div>
+<div class="advan advan4 col-md-3 wow slideInUp" data-wow-delay="0.5s">
+      <div class="title">
+        <span>高效</span>
+        <i class="ad-bg bg4"></i>
+      </div>
+      <div class="profile">研发周期高效化<br />
+运营维护高效化<br />
+服务反馈高效化</div>
+    </div>
+
+  </div>
+</div>
+  </div>
+  <!-- 我们的优势 -->
+
+  <!-- 我们的服务 -->
+  <div class="bankScroll" id="services">
+    <div class="img-bg">
+	<img src="/assets/images/bg21.jpg" alt="我们的服务" />
+
+</div>
+<div class="bg"></div>
+<div class="con cur">
+	<p class="f_72">我们的服务</p>
+	<ul class="ser-c clearfix services">
+		<!-- ************** 科技事业部 ************** -->
+		<li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.3s">
+				<a href="/service/APP/ ">
+					<img src="/assets/images/icons/service-app.png" alt=""/>
+					<p class="xf-18 f_corccc ">APP项目定制开发</p>
+				</a>
+			</li>
+		<li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.4s">
+				<a href="#">
+				<!-- <a href="/service/server/ "> -->
+					<img src="/assets/images/icons/server.png" alt="" />
+					<p class="xf-18 f_corccc ">软件定制开发</p>
+				</a>
+			</li>
+		<li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.1s">
+				<a href="/service/APP/ ">
+					<img src="/assets/images/icons/service-h5.png" alt="" />
+					<p class="xf-18 f_corccc ">小程序/微信平台开发与设计</p>
+				</a>
+			</li>
+		<li class="service sev3 list-5 wow slideInUp" data-wow-delay="0s">
+				<a href="/service/web/ ">
+					<img src="/assets/images/icons/service-pc.png" alt=""/>
+					<p class="xf-18 f_corccc ">网站系统设计开发</p>
+				</a>
+			</li>
+		<!-- <li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.2s">
+			<a href="/service/web/ "> <i class="ser-c cl"></i> <i class="ser-c cr"></i>
+				<i class="services icon-s1"></i>
+				<div class="title">软件开发</div>
+					<div class="profile">企业定制软件、网站开发设计彰显品牌形象</div>
+
+			</a>
+		</li>
+		<li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.4s">
+			<a href="/service/mobile/ ">
+				<i class="ser-c cl"></i>
+				<i class="ser-c cr"></i>
+				<i class="services icon-s2"></i>
+				<div class="title">移动平台开发与设计</div>
+					<div class="profile">定制手机网站 / 微网站制作<br />
+布局移动互联网</div>
+
+			</a>
+		</li> -->
+		<!-- <li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.6s">
+			
+		</li> -->
+		<!-- <li class="service sev3 list-5 wow slideInUp" data-wow-delay="0.8s">
+			<a href="/service/APP/ ">
+				<i class="ser-c cl"></i>
+				<i class="ser-c cr"></i>
+				<i class="services icon-s4"></i>
+				<div class="title">APP应用程序</div>
+					<div class="profile">基于 iOS / Android 应用开发<br />
+掌控智能终端时代</div>
+
+			</a>
+		</li>
+		<li class="service sev3 list-5 wow slideInUp" data-wow-delay="1s">
+			<a href="/service/server/ ">
+				<i class="ser-c cl"></i>
+				<i class="ser-c cr"></i>
+				<i class="services icon-s5"></i>
+				<div class="title">服务器运维</div>
+					<div class="profile">我们不只提供云硬件和网络<br />
+更加注重技术运维</div>
+
+			</a>
+		</li> -->
+		<!-- ************** 科技事业部 ************** -->
+	</ul>
+</div>
+  </div>
+  <!-- 我们的服务 -->
+
+  <!-- 案例  展示 -->
+  <div class="bankScroll" id="case">
+    <div class="img-bg">
+	<img src="/assets/images/bg31.jpg" alt="" />
+</div>
+<div class="bg"></div>
+<div class="con clearfix margin overflow">
+	<div class="clearfix margin overflow wow slideInUp">
+		<p class="f_72 f_corf00" style="margin-top:1em;line-height:normal;">我们的案例</p>
+		<p class="f_14 f_cor777">
+			<!-- <a class="f_cor777" href="">我们坚信，设计源于心</a> -->
+		</p>
+		<ul class="clearfix case-nav f_cor333">
+			<li class="cur">
+				<span class="title">全部</span>
+				<span class="num">150</span>
+			</li>
+			
+			<li>
+				<span class="title">APP应用程序</span>
+				<span class="num">40</span>
+			</li>
+			
+			<li>
+				<span class="title">软件定制开发</span>
+				<span class="num">40</span>
+			</li>
+			
+			<li>
+				<span class="title">小程序/微信平台开发与设计</span>
+				<span class="num">40</span>
+			</li>
+			
+			<li>
+				<span class="title">网站建设</span>
+				<span class="num">40</span>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="l_anli_con clearfix margin">
+		<!-- 案例展示 -->
+		<ul class="l_ul clearfix case1" id="title">
+			<li class="pro wow slideInUp">
+				<a href="/case/web/20170428/93.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F42Q3442CI.jpg" alt="诸城恐龙世界" class="w100" />
+						<div class="case-pro">
+							<p class="title">诸城恐龙世界</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/web/20170427/92.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F42GI3510-L.jpg" alt="启航财税" class="w100" />
+						<div class="case-pro">
+							<p class="title">启航财税</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/web/20170415/86.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F415102155C1.jpg" alt="上海赢骥企业管理咨询有" class="w100" />
+						<div class="case-pro">
+							<p class="title">上海赢骥企业管理咨询有</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+		<ul class="l_ul clearfix case2" id="title">
+			<li class="pro wow slideInUp">
+				<a href="/case/APP/20170822/95.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1FR21Q021W6.jpg" alt="e家洁" class="w100" />
+						<div class="case-pro">
+							<p class="title">e家洁</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/APP/20170822/98.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1FR6093605505.jpg" alt="亲亲小贷" class="w100" />
+						<div class="case-pro">
+							<p class="title">亲亲小贷</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/APP/20170822/96.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1P32115260E41.png" alt="睛挑细选" class="w100" />
+						<div class="case-pro">
+							<p class="title">睛挑细选</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+			
+		</ul><ul class="l_ul clearfix case3" id="title">
+			<li class="pro wow slideInUp">
+				<a href="/case/mobile/20170329/48.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F32Z9203R47.jpg" alt="富纳多鲜果商城" class="w100" />
+						<div class="case-pro">
+							<p class="title">富纳多鲜果商城</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/mobile/20170329/50.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F3291019250-L.jpg" alt="天润品质生活" class="w100" />
+						<div class="case-pro">
+							<p class="title">天润品质生活</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/mobile/20170329/51.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F3291021180-L.jpg" alt="太上美业" class="w100" />
+						<div class="case-pro">
+							<p class="title">太上美业</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+			
+		</ul><ul class="l_ul clearfix case4" id="title">
+			<li class="pro wow slideInUp">
+				<a href="/case/web/20170428/93.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F42Q3442CI.jpg" alt="诸城恐龙世界" class="w100" />
+						<div class="case-pro">
+							<p class="title">诸城恐龙世界</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/web/20170427/92.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F42GI3510-L.jpg" alt="启航财税" class="w100" />
+						<div class="case-pro">
+							<p class="title">启航财税</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+<li class="pro wow slideInUp">
+				<a href="/case/web/20170415/86.html" class="block wh100">
+					<div class="img_div">
+						<img src="/assets/images/demos/1-1F415102155C1.jpg" alt="上海赢骥企业管理咨询有" class="w100" />
+						<div class="case-pro">
+							<p class="title">上海赢骥企业管理咨询有</p>
+							<p class="contxt"></p>
+						</div>
+					</div>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+
+<script>
+	// 案例TAB标签展示
+
+	$(function(){
+		var tabnav = $("#case ul.case-nav li");
+		var tabcon = $("#case .l_anli_con ul.l_ul");
+		// var this = $(this);
+		tabnav.click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+			var index = $(this).index();
+			tabcon.eq(index).show().siblings().hide().find("li").removeClass("animated");
+			try{
+				var wow = new WOW({
+		            boxClass: 'pro',
+		            animateClass: 'animated',
+		            offset: 0,
+		            mobile: true,
+			        live: true
+		        });
+		        wow.init();
+		    }catch(e){	    	
+		    	console.log(e);
+		    }
+		})
+	})
+</script>  
+  </div>
+  <!-- 案例  展示 -->
+
+  <!-- 联系  我们 -->
+  <div class="bankScroll" id="contact">  
+    <div class="img-bg">
+<img src="/assets/images/etc/1-1609121439400-L.jpg" alt="联系我们" />
+
+</div>
+<div class="bg"></div>
+<div class="con">
+  <p class="f_72 contactSy_tilte wow slideInUp">联系我们</p>
+  <div class="contact-con over">
+    <div class="l-con left wow slideInLeft">
+
+      <form action="" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="action" value="post">
+        <input type="hidden" name="diyid" value="1">
+        <input type="hidden" name="do" value="2">
+        <ul class="clearfix">
+          <li>
+            <p class="title">
+              <span class="ch">姓名</span>
+              <span class="en">NAME</span>
+            </p>
+            <input type="text" name="uname" id="uname" class="in-con" value="" required="required" />
+          </li>
+          <li>
+            <p class="title">
+              <span class="ch">电话</span>
+              <span class="en">TEL</span>
+            </p>
+            <input type="text" name="tel" id="tel" class="in-con" value="" required="required" />
+          </li>
+          <li>
+            <p class="title">
+              <span class="ch">邮箱</span>
+              <span class="en">E-MAIL</span>
+            </p>
+            <input type="text" name="email" id="email" class="in-con" value="" required="required" />
+          </li>
+          <li>
+            <p class="title">
+              <span class="ch">公司名称</span>
+              <span class="en">COMPANY</span>
+            </p>
+            <input type="text" name="name" id="name" class="in-con" value="" required="required" />
+          </li>
+          <li>
+            <p class="title">
+              <span class="ch">留言</span>
+              <span class="en">MESSAGE</span>
+            </p>
+            <textarea name="msg" id="msg" cols="30" rows="10" class="in-con" required="required"></textarea>
+          </li>
+          <li style="display:none;">
+            <input type="hidden" name="dede_fields" value="uname,text;tel,text;email,text;company,text;msg,multitext" />
+            <input type="hidden" name="dede_fieldshash" value="4005492dabb8766e6213da0ee60c2313" />
+          </li>
+          <li>            
+            <input type="submit" name="submit" id="submit" class="in-con" />
+          </li>
+        </ul>
+      </form>
+
+    </div>
+    <div class="r-con right wow slideInRight">
+      <ul class="clearfix">
+        <li class="title">
+          <p>联系方式</p>
+        </li>
+        <li>
+          <span class="title">咨询热线：</span>
+          <span class="con">13475837382</span>
+        </li>
+        <li>
+          <span class="title">工作时间：</span>
+          <span class="con">400客服热线全天候值班响应</span>
+        </li>
+        <li>
+          <span class="title">青岛联系：</span>
+          <span class="con">青岛市黄岛区峨眉山路396号光谷软件园</span>
+        </li>
+        <!-- <li>
+          <span class="title">青岛联系：</span>
+          <span class="con">青岛市崂山区海尔路63号1座504室</span>
+        </li>
+        <li>
+          <span class="title">北京联系：</span>
+          <span class="con">北京市朝阳区姚家园路105号观湖国际大厦1座401室</span>
+        </li>
+        <li>
+          <span class="title">杭州联系：</span>
+          <span class="con">杭州市古墩路616号同人精华大厦6号楼2楼</span>
+        </li>
+        <li>
+          <span class="title">西安联系：</span>
+          <span class="con">西安市雁塔路58号百瑞广场A区10楼1029室</span>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+  <!-- 联系  我们 -->
+  <!-- content -->
+  <!-- footer -->
+  <!-- 底部 -->
+<div class="fot wow slideInUp section">
+<div class="bottoms_over">
+  <div class="fot-con">
+    <p>Copyright &copy;   青岛共享智能制造有限公司 版权所有   鲁ICP备16038603号-1</p>
+  </div>
+</div>
+</div>
+<!-- 底部 -->
+<p style="display:none;">手机号：13475837382      QQ：276422114 </p>
+<!-- 右侧悬浮框 -->
+<div class="r-slide-nav">
+	<a class="nav1" href="javascript:void(0)">
+		<i>13475837382</i>
+	</a>
+	<a class="nav2" href="http://wpa.qq.com/msgrd?v=3&uin=276422114&site=qq&menu=yes">
+		<i>在线客服</i>
+	</a>
+	<a class="nav3" href="/employ/">
+		<i>人才招聘</i>
+	</a>
+	<a class="nav4" href="javascript:void(0)">
+		<i>返回顶部</i>
+	</a>
+</div>
+<script>
+  $(".r-slide-nav a.nav4").click(function() {
+    $("html,body").animate({
+      scrollTop: 0
+    },500);
+  })
+</script>
+<!-- 右侧悬浮框 -->
+
+<!-- 百度商桥 -->
+
+<!-- 百度商桥 -->
+
+  <!-- footer -->
+</body>
+</html>
