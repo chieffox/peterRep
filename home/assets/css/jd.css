@@ -1,0 +1,46 @@
+body { padding: 0; margin: 0; font-family: "Microsoft YaHei"; background: #333; }
+.main { width: 1280px; margin: 0 auto; position: relative; }
+header { width: 1280px; height: 85px; line-height: 85px; z-index: 999999; background: rgba(29,128,170,0.5); }
+header.open { background: rgba(0, 0, 0, .6); }
+.com_title { height:45px; margin-top: 0; display: inline-block; }
+.logoBox { height: 65px; position: absolute; left: 80px; top: 10px; }
+/*.header2 { background: rgba(40,171,227,0.5); width: 100%; padding: 8px 0; position: fixed; top: 75px; z-index: 99999999; -webkit-transition: all 0.8s ease 0s;
+-o-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; text-align: center; }*/
+.header2 { background: rgba(40,171,227,0.5); width: 1280px; padding: 8px 0; position: fixed; top: 85px; z-index: 99999999; }
+.contain { text-align: center; min-width: 700px; }
+.open2 { top: 0; -webkit-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; }
+#subBox { display: inline-block; position: relative; left: 415px; }
+.subtitle {  width: 100px; color: #fff; text-align: center; font-size: 1em; display: inline-block; box-sizing: border-box; cursor: pointer; }
+.subborder { border-right: 1px solid #fff; box-sizing: border-box;}
+.loginBox { display: inline-block; margin: 0 50px 0 100px; }
+.loginBtn { width: 50px; cursor: pointer; }
+.l_div p { font-family: "Microsoft YaHei"; }
+
+.col-md-3 { width: 50%; }
+/*.title { background: url('../web/assets/images/products_title_bg.png') repeat-x; font-family: "Microsoft YaHei"; font-size: 1em; }
+.advan1 .title:hover { box-shadow: 0px 5px 0px #c10513; }
+.advan2 .title:hover { box-shadow: 0px 5px 0px #7fae1b; }
+.advan3 .title:hover { box-shadow: 0px 5px 0px #0787c1; }
+.advan4 .title:hover { box-shadow: 0px 5px 0px #bb7602; }*/
+.techBox { width: 800px; margin: 0 auto; }
+.title {  font-size: 1.5em; display: inline-block; width: 300px; height: 60px; line-height: 50px; margin: 20px 0; }
+.title1 { background: url('http://projects.gongxiangcm.com/JD_WEB/web/assets/images/btn1.png') no-repeat; background-size: 100% 100%; }
+.title2 { background: url('http://projects.gongxiangcm.com/JD_WEB/web/assets/images/btn2.png') no-repeat; background-size: 100% 100%; }
+.title3 { background: url('http://projects.gongxiangcm.com/JD_WEB/web/assets/images/btn3.png') no-repeat; background-size: 100% 100%; }
+.title4 { background: url('http://projects.gongxiangcm.com/JD_WEB/web/assets/images/btn4.png') no-repeat; background-size: 100% 100%; }
+.contact_title {  display: inline-block; }
+.ch { display: block; font-size: 1em; line-height: 20px; }
+
+.demo_animation { position: relative; left: 0px; animation: mymove 2s forwards;}
+@keyframes mymove{ from{left:0px;} to{left:-480px;} }
+.demoImage { width: 390px; height: 270px; margin:30px; }
+.demoImage_desc { position: absolute; left: 30px; bottom: 30px; width: 390px; height: 0px; background: rgba(0,0,0,0.7); padding: 0 10px; text-align: left; line-height: 40px; font-size:1em; color: #fff; transition: height 0.5s ease 0s; }
+.desc_show { height: 40px; }
+.bottoms_over { width: 1280px; background:rgba(40,171,227,0.5); }
+
+
+.introBox { width: 100vw; height: 100vh; padding-top: 50vh; background: url('http://projects.gongxiangcm.com/JD_WEB/web/assets/images/intro_bg.jpg') no-repeat;background-size: 100vw auto; }
+.introText { width: 100%; padding: 0 50px; background: #313131; }
+.textBox { width: 832px; display: inline-block; margin-bottom: 50px; }
+
+.text { color: #fff; font-size: 1em; line-height: 30px; }

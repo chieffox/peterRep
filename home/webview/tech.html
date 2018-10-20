@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网梯学航教育平台</title> 
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/jquery-1.11.3.min.js"></script> 
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/jquery.easing.min.js"></script> 
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/wow.min.js"></script> 
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/XQ-1.0.3-bate.js"></script> 
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/l_js.js"></script> 
+  <link rel="stylesheet" href="http://projects.gongxiangcm.com/JD_WEB/web/assets/css/main.css" /> 
+  <link rel="stylesheet" href="http://projects.gongxiangcm.com/JD_WEB/web/assets/css/public.css" /> 
+  <link rel="stylesheet" href="http://projects.gongxiangcm.com/JD_WEB/web/assets/css/animate.min.css" />
+  <link rel="stylesheet" href="http://projects.gongxiangcm.com/JD_WEB/web/assets/css/l_style.css" /> 
+  <link rel="stylesheet" href="http://projects.gongxiangcm.com/JD_WEB/web/assets/css/bootstrap.min.css" />
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/jquery.mousewheel.js"></script>
+  <script src="http://projects.gongxiangcm.com/JD_WEB/web/assets/js/index.min.js"></script>
+  <link rel="stylesheet" href="http://projects.gongxiangcm.com/JD_WEB/web/assets/css/jd.css" />
+
+  <!--[if lt IE 9 ]>
+    <script src='http://projects.gongxiangcm.com/JD_WEB/web/assets/js/html5.js'></script>
+    <script src='http://projects.gongxiangcm.com/JD_WEB/web/assets/js/respond.js'></script>
+  <![endif]--> 
+  <style>
+    .demo_animation { position: relative; left: 0px; animation: mymove 2s forwards;}
+    @keyframes mymove{ from{left:0px;} to{left:-480px;} }
+    .demoImage { width: 390px; height: 260px; margin:30px; }
+    .demoImage_desc { position: absolute; left: 30px; bottom: 30px; width: 390px; height: 0px; background: rgba(0,0,0,0.7); padding: 0 10px; text-align: left; line-height: 40px; font-size:0.8em; color: #fff; transition: height 0.5s ease 0s; }
+    .desc_show { height: 40px; }
+    #tech .con { text-align: left; }
+    .tech_num { width: 200px; position: absolute; top: 40vh; left: 50px; visibility: visible; animation-name: slideInUp; }
+    .section { padding-left: 300px; padding-top: 121px; position: relative; }
+    .item_img { text-align: right; padding-top:30px; padding-right: 50px; }
+    .item_img img { width: 550px; }
+    .item_text { text-align: left; padding-right: 50px; }
+    .textBox { display: inline-block; font-size: 1em; color: #fff; font-family: "Microsoft YaHei"; line-height: 25px; vertical-align: middle; }
+    .textBox_title { color: #fff; font-size: 1.8em; line-height: 50px; border-bottom: 1px solid #7c7c7c; display: inline-block; margin-top: 20px; margin-bottom: 20px; font-family: "Microsoft YaHei"; padding: 0 10px; }
+    .enterBtn { height: 25px; margin-left: 10px; }
+    .no_border { border: 0; display: block; margin-bottom: 10px; padding: 0; }
+    .text_left { width: 343px; }
+    .text_right { width: 557px; }
+  </style>
+  
+</head> 
+<body>
+  <div class="main">
+    <header class="po-f clearfix">
+      <div class="contain">
+        <!-- <div class="logo left"> -->
+
+        <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/logo.png" class="logoBox" onclick="location.href='index.php?act=webview'" />
+
+        <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/com_title.png" class="com_title" id="com_title" />
+        
+      </div>
+    </header>
+    <div class="header2">
+      <div id="subBox">
+        <div class="subtitle subborder" url="index.php?act=webview">首页</div>
+        <div class="subtitle subborder" url="index.php?act=webview&page=intro">公司介绍</div>
+        <div class="subtitle subborder" url="index.php?act=webview&page=tech">技术与产品</div>
+        <div class="subtitle subborder" url="index.php?act=webview&page=demo">成功案例</div>
+        <div class="subtitle" url="index.php?act=webview&page=contact">联系我们</div>
+      <!-- <div class="loginBox">
+        <div class="subtitle loginBtn subborder">登录</div>
+        <div class="subtitle loginBtn">注册</div>
+      </div> -->
+      </div>
+    </div>
+  
+  <div class="bankScroll" id="advantages">
+    <div class="img-bg">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_1.jpg" />
+    </div>
+    <div class="bg"></div>
+    <div class="con">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_logo.png" style="height: 400px; margin-top: 200px;" class="wow slideInUp animated" />
+    </div>
+  </div>
+
+<!-- section1-->
+  <div class="bankScroll" id="tech">
+    <div class="img-bg">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_2.jpg" alt="技术与产品" />
+    </div>
+    <div class="bg"></div>
+    <div class="con">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_num.png" class="tech_num wow slideInUp animated" />
+      <div class="section">
+        <div class="item_img"><img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_sec_1_item.png" class=" wow slideInRight" /></div>
+        <div class="item_text">
+          <div class="textBox text_left wow slideInUp" style="margin-right: 20px;">
+            <div class="textBox_title">企业内部培训平台</div>
+            <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_enter.jpg" class="enterBtn" />
+            <div class="text">　　完善的培训机制是企业规范化塑造专业可用人才的核心，近年来众多企业开始建立自己的企业大学，然而线下培训和以老带新的方式耗费人力、覆盖面窄、可持续性低，与线上平台结合后，可实现低成本、高频可持续化。<br>　　企业内部培训平台为实现企业内部人员长期培训而开发搭建，提供线上平台辅助，保证培训质量的同时达到资源整合，致力于提供长期可持续的一站式互动监督学习平台，灵活适用于多种培训需求。以功能强大的后台管理和极致的前端用户体验打造高效的学习环境。</div>
+          </div>
+          
+          <div class="textBox text_right wow slideInUp">
+            <div class="textBox_title no_border">平台优势</div>
+            <div class="text">1、学习地图——对职工的任职资格能力，要求通过学习地图向学员明确不同岗位方向和不同级别必须掌握的知识技能，并对应推荐学习课程；<br>
+            2、完善的促学机制——通过积分、签到、排行榜等多种促学机制确保学员积极性；<br>
+            3、学习模式多样化——支持多类型的资源整合展示，学员可通过培训计划、课程学习、主题讨论、资料交流等多种方式学习，帮助学员全方位、多维度理解知识点；<br>
+            4、实时监控追踪——管理员通过学习地图布置目标，通过学情统计实时监督，通过学员考核成绩、调查问卷获得反馈。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- section2-->
+  <div class="bankScroll" id="tech">
+    <div class="img-bg">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_3.jpg" alt="技术与产品" />
+    </div>
+    <div class="bg"></div>
+    <div class="con">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_num_2.png" class="tech_num wow slideInUp animated" />
+      <div class="section">
+        <div class="item_img"><img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_sec_2_item.png" style="width: 400px; margin-right: 60px;" class=" wow slideInRight" /></div>
+        <div class="item_text">
+          <div class="textBox text_left wow slideInUp" style="width: 441px; margin-right: 20px;">
+            <div class="textBox_title">专业技术人员培训平台</div>
+            <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_enter.jpg" class="enterBtn" />
+            <div class="text">　　网梯学航专业技术人员培训平台以在线学习、培训教育为核心，面向专业技术人员提供服务，帮助专业技术人员提升专业技能、专业素质。平台设计本着“前瞻设计、规范开发”的高可靠性、灵活性、可扩展性，以及系统建设和升级的连续性的原则，充分体现了在线培训带来的优越性。<br>　　平台以“专业化、互联网化、前瞻化”为目标，通过平台建设，帮助施教机构实现在线学习的网络报名、缴费、开课选课、学习过程管理、网络考试、网络发证的“一站式”在线学习管理功能。</div>
+          </div>
+          
+          <div class="textBox text_right wow slideInUp" style="width: 459px;">
+            <div class="textBox_title no_border">产品特色</div>
+            <div class="text">1、满足《专业技术人员继续教育规定》中关于网络培训的相关规则；<br>2、适配不同地区政策需求，快速定制平台；<br>3、针对不同行业特点的监督管理特点，快速适配学习考核体系；<br>4、学习过程管理清晰透明；<br>5、人性化设计，充分分析专业技术人员的学习特点，为其优化学习体验；<br>6、全流程覆盖，用户足不出户完成继续教育认证过程。</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- section3-->
+  <div class="bankScroll" id="tech">
+    <div class="img-bg">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_2.jpg" alt="技术与产品" />
+    </div>
+    <div class="bg"></div>
+    <div class="con">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_num_3.png" class="tech_num wow slideInUp animated" />
+      <div class="section">
+        <div class="item_img"><img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_sec_3_item.png" style="width: 700px;" class=" wow slideInRight" /></div>
+        <div class="item_text" style="position: relative; top: -20px;">
+          <div class="textBox wow slideInUp" style="width: 850px;">
+            <div class="textBox_title">非学历教育教学管理平台</div>
+            <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_enter.jpg" class="enterBtn" />
+            <div class="text">　　非学历教育教学管理平台面向高校、职业院校对外开展社会培训，是以教学、教辅系统为支撑，遵循互联网教育设计理念，采用最新互联网和移动互联网开发技术，全方位满足学院的“从学员入学、教务教学到成绩毕业全流程”的教务管理需求、“多终端在线交互式学习”的教学管理需求及“门户/微信/教务OA等”支撑服务需求的综合信息化管理平台。</div>
+            <div class="text" style="margin-top: 10px;">　　平台满足三类用户的使用需求：<br>学员：课程学习、在线作业、交流分享自己的收获，同时可通过移动端进行随时随地的学习；<br>
+教师：班级管理工作、本班的课程辅导、资源推优、督促学员网上学习等；<br>
+管理员：对平台整体的管理，包括课程库、师资库、项目管理、培训流程控制和维护等。</div>
+            <div class="text" style="margin-top: 10px;">　　平台可以提供一整套的解决方案，管理功能强大，极大提高工作效率，降低管理成本，实用性强，操作灵活简便，开发周期快，风险可控，配套设施齐全，并且可接受客户提出的订制化需求。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section4-->
+  <div class="bankScroll" id="tech">
+    <div class="img-bg">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_3.jpg" alt="技术与产品" />
+    </div>
+    <div class="bg"></div>
+    <div class="con">
+      <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_num_4.png" class="tech_num wow slideInUp animated" style="top: 171px;" />
+      <div class="section">
+        <div class="item_img" style="position: absolute; right: 0;"><img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_sec_4_item.png" style="width: 280px;" class=" wow slideInRight" /></div>
+        <div class="item_text" style="padding-top: 40px;">
+          <div class="textBox wow slideInUp" style="width: 600px;">
+            <div class="textBox_title">睿课（课件编录系统）</div>
+            <img src="http://projects.gongxiangcm.com/JD_WEB/web/assets/images/tech_enter.jpg" class="enterBtn" />
+            <div class="text">　　睿课是网梯学航打造的专业课程制作工具，通过先进的音、视频采集技术，同时采集桌面视频和摄像视频，形成标准三分屏、大视频课程。该系统集课件录制、课件剪辑、素材做课、云盘存储、浏览分享等核心功能为一体，支持Windows和Mac系统录制。是制作网络课程的首选工具。</div>
+            <div class="textBox wow slideInLeft" style="position: relative; left: -250px;">
+            <div class="textBox_title no_border">睿课核心特点</div>
+              <div class="text">1、完备：集课程录制、剪辑、云存储、分享为一体。 <br>2、标准：符合scorm标准，满足所有在线学习平台的要求。<br>3、多模式：三分屏模式——标准三分屏课件；录屏模式——大视频课件；摄像模式——外接摄像机后可录制全景。<br>4、新技术：采用H.264+AAC技术，视频文件体积小。<br>5、简单易用：人性化界面使得录制、编辑操作更简单。无需专业知识，5分钟成为做课专家。<br>6、即时生成：录制过程中，根据课件内容实时生成课件，停止录制后，自动对文件进行配置，保证课件的快速录制。<br>7、配置灵活：硬件设备要求门槛低，根据需要灵活选择外接设备。<br>8、兼容性强：睿课录制的课件兼容所有PC端主流浏览器和移动浏览器，实现课件的无缝预览。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  
+</div>
+  <!-- 联系  我们 -->
+  <!-- content -->
+  <!-- footer -->
+  <!-- 底部 -->
+<div class="fot wow slideInUp section">
+<div class="bottoms_over">
+  <div class="fot-con">
+    <p>Copyright &copy;   山东网梯学航网络科技有限公司 版权所有   鲁ICP备18040050号</p>
+  </div>
+</div>
+</div>
+<!-- 底部 -->
+<p style="display:none;">手机号：13475837382      QQ：276422114 </p>
+<!-- 右侧悬浮框 -->
+<div class="r-slide-nav">
+  <a class="nav1" href="javascript:void(0)">
+    <i>0535-6800033</i>
+  </a>
+  <a class="nav2" href="http://wpa.qq.com/msgrd?v=3&uin=1669068203&site=qq&menu=yes" target="_blank">
+    <i>在线客服</i>
+  </a>
+  <!-- a class="nav3" href="/employ/">
+    <i>人才招聘</i>
+  </a> -->
+  <a class="nav4" href="javascript:void(0)">
+    <i>返回顶部</i>
+  </a>
+</div>
+<script>
+  $(".r-slide-nav a.nav4").click(function() {
+    $("html,body").animate({
+      scrollTop: 0
+    },500);
+  })
+
+  $('.subtitle').click(function(){
+    location.href = $(this).attr('url');
+  })
+  
+</script>
+<!-- 右侧悬浮框 -->
+
+<!-- 百度商桥 -->
+
+<!-- 百度商桥 -->
+
+  <!-- footer -->
+</body>
+</html>
